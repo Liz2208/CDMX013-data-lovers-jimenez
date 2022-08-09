@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0;
@@ -8,7 +7,7 @@ body{
 }
 header{
   position: fixed;
-  top:\BeliFr\CDMX013-data-lovers-frias-jimenez\tree\FBFR-configuracioninicial\src\images0;
+  top:0;
   left:0;
   width: 100%;
   display: flex;
@@ -16,10 +15,10 @@ header{
   transition: 0.7s;
   padding: 30px 20px;
   z-index: 10;
-  background: grey;
+  background:url(images/vector.jpg);
 }
 .aros{
-  width: 80px;
+  width: 150px;
     height: auto;
 }
 header.abajo{
@@ -48,7 +47,7 @@ nav{
   height: 100vh;
 }
 header.abajo .logo{
-  color:black;
+  color:#103783;
 }
 main {
   position: relative;
@@ -61,17 +60,67 @@ main {
 }
 main .navigacion-items {
   padding: 0 10%;
+  
 }
-main .content {
-  display: none;
-  background: url("images/rio.jpg");
-  background-repeat: no-repeat;
-  width: 50%;
-}
+
 #navi {
 	list-style-type:circle;
   margin: 5%;
 }
-#sports {
-  display: block;
+
+label{
+  color:#103783;
+  font-weight: bold;
+  font-size: 1em;
+  
+  align-items: flex-start;
+}
+#sports-btn {
+  background-color:transparent;
+  width: 50px;
+  height: 50px;
+  border-color: #00B4D8;
+  border-radius: 30px;
+  margin: 15px;
+  border-width: 5px;
+}
+#athletes-btn{
+  background-color:transparent;
+  width: 50px;
+  height: 50px;
+  border-color: #F4E135;
+  border-radius: 30px;
+  margin: 15px;
+  border-width: 5px;
+}
+#countries-btn{
+  background-color:transparent;
+  width: 50px;
+  height: 50px;
+  border-color: #081C15;
+  border-radius: 30px;
+  margin: 15px;
+  border-width: 5px;
+}
+#medals-btn{
+  background-color:transparent;
+  width: 50px;
+  height: 50px;
+  border-color: #55A630;
+  border-radius: 30px;
+  margin: 15px;
+  border-width: 5px;
+}
+#curiosities-btn{
+  background-color:transparent;
+  width: 50px;
+  height: 50px;
+  border-color: #EF233C;
+  border-radius: 30px;
+  margin: 15px;
+  border-width: 5px;
+}
+img{
+  width: 400px;
+  height: 400px;
 }
