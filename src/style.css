@@ -88,6 +88,9 @@ label{
   margin: 15px;
   border-width: 5px;
 }
+  button:hover{
+cursor: pointer;
+  }
 #athletes-btn{
   background-color:transparent;
   width: 50px;
