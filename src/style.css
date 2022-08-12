@@ -36,15 +36,17 @@ header .logo{
   font-family: 'Edu VIC WA NT Beginner', cursive;
   font-size: 40px;
 }
-nav{
-  display: block;
+
+.search-container{
+  position: relative;
+  justify-content: right;
 }
 .searchBar{
   background-color: #fff;
   font-size: 20;
   width: 200px;
   height: 40px;
-  border-color: #fff;
+  border-color: gray;
 }
 .zona1{
   position: 100%;
@@ -52,8 +54,7 @@ nav{
   height: 100vh;
 }
 header.abajo .logo{
-  color:#e712b9;
-  font-family: 'rio2016-light-regular', sans-serif;
+  color:#103783;
   font-family: 'Edu VIC WA NT Beginner', cursive;
   font-size: 40px;
 }
@@ -68,7 +69,6 @@ main {
 }
 main .navigacion-items {
   padding: 0 10%;
-  
 }
 
 label{
@@ -88,9 +88,6 @@ label{
   margin: 15px;
   border-width: 5px;
 }
-  button:hover{
-cursor: pointer;
-  }
 #athletes-btn{
   background-color:transparent;
   width: 50px;
@@ -131,3 +128,4 @@ img{
   width: 400px;
   height: 400px;
 }
+

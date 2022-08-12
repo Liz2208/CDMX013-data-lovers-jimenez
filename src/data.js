@@ -1,9 +1,25 @@
-// estas funciones son de ejemplo
-
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
+export const sortData = (data, sortOrden) => {
+    if (sortOrden === 'ASC'){ 
+        data.sort ((a,b)=> {
+          if (a.name > b.name) {
+            return 1;
+          }
+          else if (a.name < b.name) {
+            return -1;
+          }
+            return 0;
+        })
+      }
+      else{
+        data.sort( (a,b) => {
+          if (a.name > b.name) {
+            return -1;
+          }
+          else if (a.name < b.name) {
+            return 1;
+          }
+            return 0;
+        })
+      }
+      return data;
 };
