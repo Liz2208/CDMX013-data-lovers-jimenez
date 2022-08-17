@@ -1,5 +1,13 @@
+window.addEventListener("scroll", function() {
+var header = this.document.querySelector("header");
+header.classList.toggle("abajo",window.scrollY>0);
+})
 import data from './data/athletes/athletes.js';
 const section = document.getElementById('sectionAthletes');
+const button = document.getElementById("button1");
+button.addEventListener("click",()=>{
+	section.classList.toggle("displaysection")
+});
 data.athletes.forEach(element => {
 	element["genderIcon"]=element.gender === 'F' ? element.gender='🙋🏻‍♀️': element.gender = '🙋🏻‍♂️'
 	if(element.medal==='Bronze'){
@@ -13,25 +21,15 @@ data.athletes.forEach(element => {
 		}
 
 	let html= `
-	<section id="athletes">
-	<div class="name">  ${element.name} </div>
-	<div class="gender">Gender: ${element.genderIcon} </div>
-	<div class="sport">Sport: ${element.SportIcon} </div>
-	<div class="medal">Medal: ${element.medalIcon} </div>
-	<div class="gender">Team: ${element.team} </div>
-
-	</section>
-	<div class="card">
+	<section id="athletes" class="card">
 	<div class="card-image"></div>
 	<div class="card-opacidad"></div>
-                <p><strong>${element.name}</strong><p>
-                <p>Gender: ${element.genderIcon}</p>
-				<p>Sport: ${element.sport}</p>
-                <p>Medal: ${element.medalIcon}</p>
-				<p>Team: ${element.team}</p>
-        </div>
+	<div class="name"> <p><strong> ${element.name}<strong> <p> </div>
+	<div class="gender"> <p>Gender: ${element.genderIcon} <p> </div>
+	<div class="sport"><p>Sport: ${element.sport} <p> </div>
+	<div class="medal"><p>Medal: ${element.medalIcon} <p> </div>
+	<div class="gender"><p>Team: ${element.team} <p> </div>
 	`;
-	section.insertAdjacentHTML('beforebegin', html);
+	section.insertAdjacentHTML('afterbegin', html);
 })
-
 
