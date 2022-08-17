@@ -7,6 +7,14 @@ const section = document.getElementById('sectionAthletes');
 const button = document.getElementById("button1");
 button.addEventListener("click",()=>{
 	section.classList.toggle("displaysection")
+	let information = data.athletes;
+let information2= information.map(item => {
+    return [item.name,item]
+})
+
+let athletesNoDuplicates = new map(information2);
+let atheletesNew= [...athletesNoDuplicates.values()];
+console.log(atheletesNew);
 });
 data.athletes.forEach(element => {
 	element["genderIcon"]=element.gender === 'F' ? element.gender='🙋🏻‍♀️': element.gender = '🙋🏻‍♂️'
