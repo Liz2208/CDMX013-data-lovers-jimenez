@@ -4,11 +4,29 @@
 }
 body {
   min-height: 50vh;
+<<<<<<< HEAD
+=======
+  background-image: url("images/fondo.jpg");
+>>>>>>> a9ee011c8f802c81e22f13281d32a4daa8a9a61f
   background-size: cover;
   background-position: absolute;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow-x: hidden; 
+<<<<<<< HEAD
+=======
+}
+body:before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  min-height: 4312vh;
+  background: linear-gradient(to top right, beige, #ffff);
+  opacity: 0.6;
+  z-index:-3;
+>>>>>>> a9ee011c8f802c81e22f13281d32a4daa8a9a61f
   }
 header{
   position: fixed;
@@ -44,12 +62,27 @@ header .logo{
 header.abajo .logo{
   color:#103783;
 }
+<<<<<<< HEAD
 .flex-section { /*seccion de tarjetas */
+=======
+.rio{
+  height: 10vh;
+  margin: 10% 0 0;
+  width: 10%;
+}
+nav{
+  display: block;
+  padding: 0 10%;
+
+}
+.flex-section {
+>>>>>>> a9ee011c8f802c81e22f13281d32a4daa8a9a61f
   display: flex;
   flex-direction: row;
   align-content: center;
   flex-wrap: wrap;
   justify-content: center;
+<<<<<<< HEAD
   background-image: url("./images/fondoconfetti.gif");
  }
 .card {
@@ -75,6 +108,36 @@ header.abajo .logo{
   position: absolute;
   border-radius: 9px;
 }
+=======
+}
+.displaysection{
+  display: none;
+}
+.card {
+  width: 212px;
+  height: 294px;
+  margin: 2px auto;
+  
+}
+.card-image {
+  width: 200px;
+  height: 150px;
+  background-size: cover;
+  background:url(images/card.jpg);
+  border-radius: 9px;
+  box-shadow: 2px 2px 10px black;
+  position: absolute;
+}
+.card-opacidad {
+  width: 180px;
+  height: 130px;
+  background-color: white;
+  opacity: 0.7;
+  margin: 13px;
+  position: absolute;
+  border-radius: 9px;
+}
+>>>>>>> a9ee011c8f802c81e22f13281d32a4daa8a9a61f
 p {
   position: relative;
   padding-left: 19px;
@@ -88,7 +151,11 @@ p {
   display: none;
 }
 #button1{
+<<<<<<< HEAD
   position:relative;
+=======
+  position: absolute;
+>>>>>>> a9ee011c8f802c81e22f13281d32a4daa8a9a61f
   margin: 150Px auto;
   background-color: aliceblue;
   width: 50px;
@@ -103,6 +170,7 @@ label{
   font-size: 20px;
   color: #103783;
   padding-left: 50px;
+<<<<<<< HEAD
 }
 #videointro{
   position: center;
@@ -126,4 +194,6 @@ label{
   min-height: 100%;
   transform: translateX(calc((100% - 100vw) / 2));
   z-index: -2;
+=======
+>>>>>>> a9ee011c8f802c81e22f13281d32a4daa8a9a61f
 }

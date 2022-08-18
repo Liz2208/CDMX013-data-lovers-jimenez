@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Filtro por deporte
 export const filterSport =(athletes, str) => {
   const resultBySport=athletes.filter(x=>x.sport===str)
@@ -48,3 +49,6 @@ const percentMale=Math.round((countMale/countTotal)*100);
 let array =[percentFemale, percentMale];
 return array;
 }
+=======
+export const filterGender = (genero, data)=>  data.filter(character => character.gender == genero);
+>>>>>>> a9ee011c8f802c81e22f13281d32a4daa8a9a61f
