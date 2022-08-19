@@ -11,33 +11,128 @@
   <body>
     <section id="intro">
     <header>
-      <img  class="aros" src="https://www.gifss.com/deportes/olimpiadas/images/olimpiada-03.gif" alt="">
-      <a href="#" class="logo" >Juegos Olímpicos Río 2016</a> 
-        </div>
+   <img  class="aros" src=".gif" alt="">
+    <a href="#" class="logo" >Juegos Olímpicos Río 2016</a> 
+    </section> <!--seccion intro termina header-->
+
     </header>        
-    <main>
-        </div>
-      <button class="button" id="button1">        
-        <label for="button1">ATLETAS</label> 
-        </select> 
-      </button>
+      <main>
+      <button class="button" id="button1"></button>  
+      <label for="button1">ATLETAS</label> 
+      </main>
+
+       <section class="containe" id="filters"> 
+        <select name ="filter" class ="filterBtn filterBtnGender">
+       <option disabled selected>Género</option>
+        <option select value = "F">Femenino</option>
+        <option select value = "M">Masculino</option> 
+        <select name ="filter" class ="filterBtn filterBtnSport">
+          <select id="sportsfigure" class="sportsfigure" name="deportes">
+            <option value="athletes" disabled selected>Deportes</option>
+            <option value="Rowing">Rowing 🚣‍♂️</option>
+            <option value="Taekwondo">Taekwondo🥋</option>
+            <option value="Handball">Handball🤾</option>
+            <option value="Wrestling">Wrestling🤼‍♂</option>
+            <option value="Archery">Archery🏹</option>
+            <option value="Athletics">Athletics🏃</option>
+            <option value="Badminton">Badminton🏸</option>
+            <option value="Basketball">Basketball🏀</option>
+            <option value="Beach Volleyball">Beach Volleyball🏐🏖</option>
+            <option value="Boxing">Boxing🥊</option>
+            <option value="Canoeing">Canoeing🚣‍♂</option>
+            <option value="Cycling">Cycling🚴‍♂️</option>
+            <option value="Diving">Diving🤿</option>
+            <option value="Equestrianism">Equestrianism🏇</option>
+            <option value="Fencing">Fencing🤺</option>
+            <option value="Football">Football⚽</option>
+            <option value="Golf">Golf⛳</option>
+            <option value="Rhythmic Gymnastics">Rhythmic Gymnastics🤸</option>
+            <option value="Gymnastics">Gymnastics🤸‍♂</option>
+            <option value="Handball"> Handball🤾</option>
+            <option value="Hockey">Hockey🏒</option>
+            <option value="Judo">Judo🥋</option>
+            <option value="Modern Pentathlon">Modern Pentathlon🎽</option>
+            <option value="Rowing"> Rowing🚣</option>
+            <option value="Rugby Sevens">Rugby Sevens🏉</option>
+            <option value="Sailing">Sailing⛵</option>
+            <option value="Shooting">Shooting🔫</option>
+            <option value="Synchronized Swimming">Synchronized Swimming</option>
+            <option value="Swimming">Swimming🏊</option>
+            <option value="Table Tennis">Table Tennis🎾</option>
+            <option value="Taekwondo">Taekwondo🥋</option>
+            <option value="Table Tennis">Table Tennis🎾</option>
+            <option value="Tennis">Tennis🎾</option>
+            <option value="Trampolining">Trampolining🤸</option>
+            <option value="Volleyball">Volleyball🏐</option>
+            <option value="Water Polo">Water Polo🤽</option>
+            <option value="Volleyball">Volleyball🏐</option>
+            <option value="Weightlifting">Weightlifting🏋‍♂</option>
+            <option value="Wrestling">Wrestling🤼</option>
+            </select> 
+
+            <button id="button-search">Buscar 🔍</button>
+            <button id="btn-return-two">Volver</button>
+
+          </select>
+      <!-- /* ORDER BY DISCIPLINES */ -->
+     
+       </section>
+    
+    <section id="sectionAthletes" class="flex-section displaysection">
+      <select name ="filter" class ="filterBtn filterBtnGender">
+        <option disabled selected>Género</option>
+         <option select value = "F">Femenino</option>
+         <option select value = "M">Masculino</option> 
+         <select name ="filter" class ="filterBtn filterBtnSport">
+           <select id="sportsfigure" class="sportsfigure" name="deportes">
+             <option value="athletes" disabled selected>Deportes</option>
+             <option value="Rowing">Rowing 🚣‍♂️</option>
+             <option value="Taekwondo">Taekwondo🥋</option>
+             <option value="Handball">Handball🤾</option>
+             <option value="Wrestling">Wrestling🤼‍♂</option>
+             <option value="Archery">Archery🏹</option>
+             <option value="Athletics">Athletics🏃</option>
+             <option value="Badminton">Badminton🏸</option>
+             <option value="Basketball">Basketball🏀</option>
+             <option value="Beach Volleyball">Beach Volleyball🏐🏖</option>
+             <option value="Boxing">Boxing🥊</option>
+             <option value="Canoeing">Canoeing🚣‍♂</option>
+             <option value="Cycling">Cycling🚴‍♂️</option>
+             <option value="Diving">Diving🤿</option>
+             <option value="Equestrianism">Equestrianism🏇</option>
+             <option value="Fencing">Fencing🤺</option>
+             <option value="Football">Football⚽</option>
+             <option value="Golf">Golf⛳</option>
+             <option value="Rhythmic Gymnastics">Rhythmic Gymnastics🤸</option>
+             <option value="Gymnastics">Gymnastics🤸‍♂</option>
+             <option value="Handball"> Handball🤾</option>
+             <option value="Hockey">Hockey🏒</option>
+             <option value="Judo">Judo🥋</option>
+             <option value="Modern Pentathlon">Modern Pentathlon🎽</option>
+             <option value="Rowing"> Rowing🚣</option>
+             <option value="Rugby Sevens">Rugby Sevens🏉</option>
+             <option value="Sailing">Sailing⛵</option>
+             <option value="Shooting">Shooting🔫</option>
+             <option value="Synchronized Swimming">Synchronized Swimming</option>
+             <option value="Swimming">Swimming🏊</option>
+             <option value="Table Tennis">Table Tennis🎾</option>
+             <option value="Taekwondo">Taekwondo🥋</option>
+             <option value="Table Tennis">Table Tennis🎾</option>
+             <option value="Tennis">Tennis🎾</option>
+             <option value="Trampolining">Trampolining🤸</option>
+             <option value="Volleyball">Volleyball🏐</option>
+             <option value="Water Polo">Water Polo🤽</option>
+             <option value="Volleyball">Volleyball🏐</option>
+             <option value="Weightlifting">Weightlifting🏋‍♂</option>
+             <option value="Wrestling">Wrestling🤼</option>
+             </select> 
+ 
+             <button id="button-search">Buscar 🔍</button>
+             <button id="btn-return-two">Volver</button>
+    <div id = "search-and-return"></div>
     </section>
-      <section class="container" id="extra">
-      <section id="sectionAthletes" class="flex-section displaysection">
-              <div id = "search-and-return">
-                <input id="input-text" type="text" placeholder="Nombre o Apellido" />
-                <button id="button-search">Buscar 🔍</button>
-                <button id="btn-return-two">Volver</button>
-              </div>
-              <select name ="filter" class ="filterBtn filterBtnGender">
-                <option disabled selected>Género</option>
-                <option select value = "F">Femenino</option>
-                <option select value = "M">Masculino</option> 
-              </select>
-            </div>
-            <div>
-      </section> 
-    </section>
-  </main>
-      <script src="main.js" type="module"></script>
+
+
+  <script src="main.js" type="module"></script>
   </body>
+  </html>

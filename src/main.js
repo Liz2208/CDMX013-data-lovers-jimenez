@@ -1,4 +1,4 @@
-import athletes from './data/athletes/athletes.js';
+//import athletes from './data/athletes/athletes.js';
 import data from './data/athletes/athletes.js';
 
 window.addEventListener("scroll", function() {
@@ -53,4 +53,3 @@ filterBtnGender.addEventListener('change', (event) => {
 		section.insertAdjacentHTML('afterbegin', html);
 	})
 })
-	
