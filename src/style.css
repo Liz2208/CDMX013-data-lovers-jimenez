@@ -11,17 +11,6 @@ body {
   background-attachment: fixed;
   overflow-x: hidden; 
 }
-body:before {
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  min-height: 4312vh;
-  background: linear-gradient(to top right, beige, #ffff);
-  opacity: 0.6;
-  z-index:-3;
-  }
 header{
   position: fixed;
   top:0;
@@ -56,10 +45,14 @@ header .logo{
 header.abajo .logo{
   color:#103783;
 }
-.rio{
-  height: 10vh;
-  margin: 10% 0 0;
-  width: 10%;
+.navbar {
+  display: flex-end;
+}
+.options{
+  display: inline-block;
+  color: #72b01d;
+  font-family: 'Schoolbell', cursive;
+  text-align: center;
 }
 nav{
   display: block;
@@ -129,3 +122,58 @@ label{
   color: #103783;
   padding-left: 50px;
 }
+#medalTable {
+  display: none;
+  align-items: center;
+}
+#filters {
+  display: flex;
+  flex-direction: row;
+}
+.filterBtn {
+  background: white;
+  font-size: 15px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 35px;
+  font-weight: bold;
+  text-align: center;
+  border-color: transparent;
+  margin-right: 8px;
+}
+.filterBtn:hover {
+  background-color: #00B4D8;
+  color: black;
+  border-color: transparent;
+}
+option {
+  background-color: #EEEF20;
+  color: black;
+  border-color: transparent;
+}
+#btn-return-one,#btn-return-two,#btn-return-three {
+    background-color: #55A630;
+    border-radius: 40px;
+    width: 70px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 8px;
+    color: black;
+    border-color: transparent;
+}
+#btn-return-one, #btn-return-three{
+    margin-left: 250px;
+}
+#btn-return-three{
+  margin-bottom: 10px;
+}
+#btn-return-one:hover {
+    background-color: #00B4D8;
+    color: white;
+  }
+  #btn-return-two:hover {
+    background-color: #00B4D8;
+    color: white;
+  }
