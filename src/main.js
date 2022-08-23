@@ -1,5 +1,6 @@
-import athletes from './data/athletes/athletes.js';
+//import athletes from './data/athletes/athletes.js';
 import data from './data/athletes/athletes.js';
+import {filterGender, filterSport} from './data.js'
 
 window.addEventListener("scroll", function() {
 	var header = this.document.querySelector("header");
@@ -16,9 +17,10 @@ const renderAthlete = (athlete) => {
 		<div class="sport"><p>Sport: ${athlete.sport} <p> </div>
 		<div class="medal"><p>Medal: ${athlete.medalIcon} <p> </div>
 		<div class="gender"><p>Team: ${athlete.team} <p> </div>
+		
 	`;
+	
 }
-
 const section = document.getElementById('sectionAthletes');
 const button = document.getElementById("button1");
 button.addEventListener("click",()=>{
@@ -33,23 +35,44 @@ data.athletes.forEach(element => {
 	} else {
 		element["medalIcon"]  = '🥇';
 	}
-
 	const html = renderAthlete(element)
-	
 	section.insertAdjacentHTML('afterbegin', html);
 })
-	///Verificamos qué deportes tiene la data:
-
+	//filtro por genero
 const filterBtnGender = document.querySelector('.filterBtnGender')
 
 filterBtnGender.addEventListener('change', (event) => {
 	const genderId = event.target.value
 	const genderIcon =  genderId === 'F' ? '🙋🏻‍♀️': '🙋🏻‍♂️'
-	const filterGender= data.athletes.filter(athlete=>genderIcon===athlete.gender)
+	
 
-
-	filterGender.forEach(athlete => {
+	filterGender(data, genderIcon).forEach(athlete => {
 		const html = renderAthlete(athlete)
 		section.insertAdjacentHTML('afterbegin', html);
+		console.log(filterGender)
 	})
 })
+
+const sortBtn = document.querySelector('.filterBtn2')
+
+sortBtn.addEventListener('change', (event) => {
+	console.log(event.target.value)
+	document.getElementById('sectionAthletes').innerHTML=''
+	section.insertAdjacentHTML('afterbegin',html);
+})
+
+// filtrado de deporte
+const filterBtnSport = document.querySelector('.filterBtnSport')
+
+filterBtnSport.addEventListener('change', (event) => {
+    const sportID = event.target.value
+	const sport =sportID ===""
+
+	filterSport(data, sportID).forEach(sport => {
+		const html = renderAthlete(sport)
+		section.insertAdjacentHTML('afterbegin', html);
+		console.log(filterSport)
+			
+	})
+})
+
