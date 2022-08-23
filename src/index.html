@@ -5,47 +5,213 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Lexend+Deca:wght@200&display=swap" rel="stylesheet">
   </head>
   <body>
-<<<<<<< HEAD
-      <header>
+    <section id="intro">
+    <header>
       <img  class="aros" src="./images/aros.gif" alt="">
       <a href="#" class="logo" >Juegos Olímpicos Río 2016</a> 
+      <div id = "search-and-return">
+        <input id="input-text" type="text" placeholder="Nombre o Apellido" />
+        <button id="button-search">Buscar 🔍</button>
+      </div>
+    </section> 
     </header>        
     <main>
-      <section class="content" id="extra">
-       <button class="button" id="button1">        
-      <label for="button1">ATLETAS</label>   </button>
-      </section>
+        </div>
+      <button class="button" id="button1">      
+        <label for="button1">ATLETAS</label> 
+        <button id="btn-return-two">Volver</button>
 
-      <section id="sect1" class="sect">
-        <video id="videointro" src="./images/videointro.mp4" autoplay="true" muted="true" loop="true" poster="./images/videointro.mp4"></video>
-      </section> 
-                
-      <section id="sectionAthletes" class="flex-section displaysection">
-        
-      </section> 
+       <section id="filtrado" class="flex-section displasection">
+        <select name ="filter" class ="filterBtn filterBtnGender">
+          <option disabled selected>Género</option>
+          <option select value = "F">Femenino</option>
+          <option select value = "M">Masculino</option> 
+          
+          <select id ="sort" class ="flex-section filterSort">
+          <select name="filter2" class="filterBtn2 filterBtnSort">
+            <option value="" selected disabled>Ordenar</option>
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+          </select>
+        </select>
+
+        <select name ="filter" class ="filterBtn3 filterBtnSport">
+            <option disabled selected>Deportes</option>
+            <option value="Rowing">Rowing 🚣‍♂️</option>
+            <option value="Taekwondo">Taekwondo🥋</option>
+            <option value="Handball">Handball🤾</option>
+            <option value="Wrestling">Wrestling🤼‍♂</option>
+            <option value="Archery">Archery🏹</option>
+            <option value="Athletics">Athletics🏃</option>
+            <option value="Badminton">Badminton🏸</option>
+            <option value="Basketball">Basketball🏀</option>
+            <option value="Beach Volleyball">Beach Volleyball🏐🏖</option>
+            <option value="Boxing">Boxing🥊</option>
+            <option value="Canoeing">Canoeing🚣‍♂</option>
+            <option value="Cycling">Cycling🚴‍♂️</option>
+            <option value="Diving">Diving🤿</option>
+            <option value="Equestrianism">Equestrianism🏇</option>
+            <option value="Fencing">Fencing🤺</option>
+            <option value="Football">Football⚽</option>
+            <option value="Golf">Golf⛳</option>
+            <option value="Rhythmic Gymnastics">Rhythmic Gymnastics🤸</option>
+            <option value="Gymnastics">Gymnastics🤸‍♂</option>
+            <option value="Handball"> Handball🤾</option>
+            <option value="Hockey">Hockey🏒</option>
+            <option value="Judo">Judo🥋</option>
+            <option value="Modern Pentathlon">Modern Pentathlon🎽</option>
+            <option value="Rowing"> Rowing🚣</option>
+            <option value="Rugby Sevens">Rugby Sevens🏉</option>
+            <option value="Sailing">Sailing⛵</option>
+            <option value="Shooting">Shooting🔫</option>
+            <option value="Synchronized Swimming">Synchronized Swimming</option>
+            <option value="Swimming">Swimming🏊</option>
+            <option value="Table Tennis">Table Tennis🎾</option>
+            <option value="Taekwondo">Taekwondo🥋</option>
+            <option value="Table Tennis">Table Tennis🎾</option>
+            <option value="Tennis">Tennis🎾</option>
+            <option value="Trampolining">Trampolining🤸</option>
+            <option value="Volleyball">Volleyball🏐</option>
+            <option value="Water Polo">Water Polo🤽</option>
+            <option value="Volleyball">Volleyball🏐</option>
+            <option value="Weightlifting">Weightlifting🏋‍♂</option>
+            <option value="Wrestling">Wrestling🤼</option>
+            </select>
            
-    </main>  
-  <script src="main.js" type="module"></script>
-  </body>
-  </html>
-=======
-    <header>
-      <img  class="aros" src="https://www.gifss.com/deportes/olimpiadas/images/olimpiada-03.gif" alt="">
-      <a href="#" class="logo" >Juegos Olímpicos Río 2016</a> 
-    </header>        
-    <main>
-      <button class="button" id="button1">        
-        <label for="button1">ATLETAS</label>  
-      </button>
-      <section class="content" id="extra"></section>
-      <img class="rio" src="images/mascotas.jpg">
-      <section id="sectionAthletes" class="flex-section displaysection">
+      <select name ="filterteam" class ="filterBtn4 filterBtnteam">        <!-- /* ORDER BY COUNTRIES */-->
+        <option value="countries" disabled selected>Países</option>
+        <option value="Algeria">Algeria</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Armenian">Armenian </option>
+        <option value="Australia">Australia </option>
+        <option value="Austria">Austria </option>
+        <option value="Azerbaijan">Azerbaijan </option>
+        <option value="Bahamas">Bahamas</option>
+        <option value="Bahrain">Bahrain </option>
+        <option value="Belgium">Belgium</option>
+        <option value="Belarus">Belarus</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Bulgarian">Bulgarian</option>
+        <option value="Germany">Germany </option>
+        <option value="Burundi">Burundi</option>
+        <option value="Canada">Canada</option>
+        <option value="Qatar">Qatar</option>
+        <option value="Chinese Taipei">Chinese Taipei</option>
+        <option value="China">China</option>
+        <option value="Colombia">Colombia</option>
+        <option value="North Korea">North Korea</option>
+        <option value="South Korea">South Korea</option>
+        <option value="Ivory Coast">Ivory Coast</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Cuba">Cuba</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Egypt">Egypt</option>
+        <option value="United Arab Emirates">United Arab Emirates</option>
+        <option value="Slovakia">Slovakia</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="Spain">Spain</option>
+        <option value="United States">United States</option>
+        <option value="Estonian">Estonian</option>
+        <option value="Ethiopia">Ethiopia</option>
+        <option value="Philippines">Philippines</option>
+        <option value="Finland">Finland</option>
+        <option value="Fiji">Fiji</option>
+        <option value="France">France</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Grenade">Grenade</option>
+        <option value="Greece">Greece</option>
+        <option value="Hungary">Hungary</option>
+        <option value="India">India</option>
+        <option value="Indonesian">Indonesian</option>
+        <option value="Iran">Iran</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Israel">Israel</option>
+        <option value="Italy">Italy</option>
+        <option value="Jamaican">Jamaican</option>
+        <option value="Japan">Japan</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Kazakhstan">Kazakhstan</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Kosovo">Kosovo</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Morocco">Morocco</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Mongolian">Mongolian</option>
+        <option value="Niger">Niger</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Norway">Norway</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Puerto Rico">Puerto Rico</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="Czech Republic">Czech Republic</option>
+        <option value="Dominican Republic">Dominican Republic</option>
+        <option value="Romania">Romania</option>
+        <option value="Russia">Russia</option>
+        <option value="Serbia">Serbia</option>
+        <option value="Singapore">Singapore</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Tajikistan">Tajikistan</option>
+        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+        <option value="Tunisia">Tunisia</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="Uzbekistan">Uzbekistan</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="Vietnam">Vietnam</option>
+          </button>   
+        </select> 
+      </section>
+    </main>
+      <section class="container" id="extra">
+      <section id="sectionAthletes" class="flex-section displaysection">    
       </section> 
-  </main>
-        <script src="main.js" type="module"></script>
+    </section>
+
+   <!--Esta sección es de la tabla de cada deporte-->
+   <section id="medalTable">
+    <div>
+      <h1 id ="titleMedals">Medallero</h1>
+    </div>
+    <div id = "search-and-return">
+      <input id="input-text" type="text" placeholder="Nombre o Apellido" />
+      <button id="button-search">Buscar 🔍</button>
+      <button id="btn-return-two">Volver</button>
+    </div>
+    <div id="filters">
+      <select name ="filter" class ="filterBtn">
+        <option disabled selected>Ordenar por</option>
+        <option select id ="optionAsc" value = "ASC">Nombre A-Z </option>
+        <option select id ="optionDesc" value = "DESC">Nombre Z-A </option> 
+      </select> 
+      <select name ="filter" class ="filterBtn">
+        <option disabled selected>Género</option>
+        <option select value = "F">Femenino</option>
+        <option select value = "M">Masculino</option> 
+      </select>
+      <select name ="filter" class ="filterBtn">
+        <option disabled selected value ="">Medalla</option>
+        <option select value = "Golden">Oro</option>
+        <option select value = "Silver">Plata</option> 
+        <option select value = "Bronze">Bronce</option> 
+      </select>
+    </div>
+    <div>
+      <table id="playersTable">
+      </table>
+    </div>
+  </section>
+
+
+      <script src="main.js" type="module"></script>
   </body>
->>>>>>> a9ee011c8f802c81e22f13281d32a4daa8a9a61f
