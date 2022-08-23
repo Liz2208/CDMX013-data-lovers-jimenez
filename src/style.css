@@ -59,7 +59,11 @@ nav{
   padding: 0 10%;
 
 }
+<<<<<<< HEAD
 .flex-section { /*section athletes*/
+=======
+.flex-section { /section athletes/
+>>>>>>> 2e208f69cbd85b06ff6b8daa006dd038ae9d24a3
   display: flex;
   align-content: center;
   flex-wrap: wrap;
