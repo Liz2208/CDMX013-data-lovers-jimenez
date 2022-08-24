@@ -4,7 +4,7 @@
 }
 body {
   min-height: 50vh;
-  background-image: url("images/fondo.jpg");
+  background-image: url("images/fondoconfetti.gif");
   background-size: cover;
   background-position: absolute;
   background-repeat: no-repeat;
@@ -45,26 +45,22 @@ header .logo{
 header.abajo .logo{
   color:#103783;
 }
-.navbar {
-  display: flex-end;
-}
-.options{
-  display: inline-block;
-  color: #72b01d;
-  font-family: 'Schoolbell', cursive;
-  text-align: center;
-}
-nav{
-  display: block;
-  padding: 0 10%;
+video {
+  position: absolute;
+  margin-top: 5%;
+  width: 50%;
+  height: 50%;
+  left: 500PX;
+  border-color: #47b01d;
+  border-style: double;
+ }
 
-}
 .flex-section { /*section athletes*/
   display: flex;
   align-content: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .displaysection{
   display: none;
@@ -73,13 +69,13 @@ nav{
   width: 212px;
   height: 294px;
   margin: 2px auto;
-  
+ 
 }
 .card-image {
   width: 200px;
-  height: 150px;
+  height: 200px;
   background-size: cover;
-  background:url(images/card.jpg);
+  background:url(images/monitos.png);
   border-radius: 9px;
   box-shadow: 2px 2px 10px black;
   position: absolute;
@@ -106,86 +102,25 @@ p {
   display: none;
 }
 #button1{
-  position: static;
-  margin: 130Px auto;
+  position: absolute;
+  top: 80px;
+  right: 200px;
   background-color: aliceblue;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 30px;
   border-color: #00B4D8;
-  border-radius: 30px;
+  border-radius: 10px;
   border-width: 5px;
-  left: 150px;
-}
-label{
-  font-family: 'Edu VIC WA NT Beginner', cursive;
-  font-size: 20px;
-  color: #103783;
-  padding-left: 50px;
-}
-
-#medalTable {
-  display: none;
-  align-items: center;
-}
-#filters {
-  display: flex;
-  justify-content: flex-end;
-}
-#filtrado {
-  background: white;
-  font-size: 15px;
-  border-radius: 40px;
-   width: 150px;
-  height: 35px;
-  font-weight: bold;
-  text-align: center;
-  border-color: transparent;
-  margin-top: 0px;
- }
-.filterBtn:hover {
-  background-color: #00B4D8;
-  color: black;
-  border-color: transparent;
-}
-option {
-  background-color: #EEEF20;
-  color: black;
-  border-color: transparent;
-}
-#btn-return-one,#btn-return-two,#btn-return-three {
-    background-color: #00B4D8;
-    border-radius: 40px;
-    width: 70px;
-    height: 30px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: 8px;
-    color: black;
-    border-color: transparent;
-    margin-left: 550px;
-}
-#btn-return-one, #btn-return-three{
-    margin-left: 250px;
-}
-#btn-return-three{
-  margin-bottom: 10px;
-}
-#btn-return-one:hover {
-    background-color: #00B4D8;
-    color: white;
-  }
-  #btn-return-two:hover {
-    background-color: #00B4D8;
-    color: white;
   }
 
-  #button-search{
-    margin-left:50px;
-  }
-  input{
-      margin-left: 20px;
-      }
-#countries{
-  margin-left: 250px;
-  
+#return{
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  background-color: aliceblue;
+  width: 80px;
+  height: 30px;
+  border-color: #00B4D8;
+  border-radius: 10px;
+  border-width: 5px;
 }
