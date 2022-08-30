@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,24 +14,26 @@
     <header>
       <img  class="aros" src="./images/aros.gif" alt="">
       <a href="#" class="logo" >Juegos Olímpicos Río 2016</a> 
-          <button class="button" id="button1">Atletas</button>     
-          <button class="return" id="return">Home</button>
+    <button class="button" id="button1">Atletas</button>   
+    <button class="button" value="summary" id="menuSummary">Estadisticas</button> 
+      <button class="return" id="return" onclick="location.reload()">Home</button> 
     </section> 
-    </header>  
-    <div id="videoRio2016">
-      <video autoplay muted loop id="myVideo">
-        <source src="images/videointro.mp4" type="video/mp4">
-      </video>      
-    <main>
+    </header> 
+    <b id="curiosities"> Los Juegos Olímpicos de Río 2016 fueron los primeros que se realizaron en la región sur del continente americano. <br> 
+      Se agregaron a la lista dos nuevos deportes. <br>
+      El golf y el rugby seven volvió a ser considerado deporte olímpico después de 92 años. </b>  
+    <video class="videointro" autoplay="true" muted="true" src="./images/videointro.mp4" id="videointro" autoplay controls> </video>
     
-      <section id="filtrado" class="flex-section displasection">
-        <select name ="filter" class ="filterBtn filterBtnGender">
+          <main>
+    
+      <section id="filtrado" class="flex-section displasection" >
+        <select name ="filter" class ="filterBtn filterBtnGender" id="gen">
           <option disabled selected>Género</option>
-          <option select value = "F">Femenino 🙋🏻‍♀️</option>
-          <option select value = "M">Masculino 🙋🏻‍♂️</option> 
-        </select>
+          <option select value = "F">Femenino</option>
+          <option select value = "M">Masculino</option> 
+      </select>
 
-        <select name ="filter" class ="filterBtn3 filterBtnSport">
+        <select name ="filter" class ="filterBtn3 filterBtnSport" id="deport">
             <option disabled selected>Deportes</option>
             <option value="Rowing">Rowing 🚣‍♂️</option>
             <option value="Taekwondo">Taekwondo🥋</option>
@@ -72,9 +75,9 @@
             <option value="Weightlifting">Weightlifting🏋‍♂</option>
             <option value="Wrestling">Wrestling🤼</option>
             </select>
-          
-      <select name ="filterteam" class ="filterBtn4 filterBtnteam">        <!-- /* ORDER BY COUNTRIES */-->
-        <option value="countries" disabled selected> Países </option>
+        
+      <select name ="filterteam" class ="filterBtn4 filterBtnteam" id="pais">        <!-- /* ORDER BY COUNTRIES */-->
+        <option value="countries" disabled selected>Países</option>
         <option value="Algeria">Algeria</option>
         <option value="Argentina">Argentina</option>
         <option value="Armenian">Armenian </option>
@@ -160,24 +163,38 @@
         <option value="Uzbekistan">Uzbekistan</option>
         <option value="Venezuela">Venezuela</option>
         <option value="Vietnam">Vietnam</option>
-          </button>   
-
-        </select> 
-        <select name ="filter" class ="filterBtn5 filterBtnMedal">
-          <option disabled selected>Medallas</option>
-          <option value="Gold">Oro 🥇</option>
-          <option value="Silver">Plata 🥈</option>
-          <option value="Bronze">Bronce 🥉</option>
-        </button>   
-      </select>
-
-      </section>
       
+          
+        </select> 
+        
+      </select> 
+      <select name ="filter" class ="filterBtn5 filterBtnMedal" id="med">
+        <option disabled selected>Medallas</option>
+        <option value="Gold">Oro 🥇</option>
+        <option value="Silver">Plata 🥈</option>
+        <option value="Bronze">Bronce 🥉</option>     
+    </select>
+    <select id="sort" class="filter" >
+      <option class= "option" selected disabled value="">Ordenado</option>
+      <option class= "option" value="AZ">A--Z</option>
+      <option class= "option" value="ZA">Z--A</option>
+    </select>
+
+  </section>
+  <section id="summary">
+    <div class="container">
+    <h4>EL PORCENTAJE DE PARTICIPACIÓN POR GENERO FUE:</h4>
+    <div id="stadistic"></div>
+    </div>
+  </section>
+
     </main>
       <section class="container" id="extra">
       <section id="sectionAthletes" class="flex-section displaysection">    
       </section> 
-    </section>
+    </section>   
+      
+    </div>
 
       <script src="main.js" type="module"></script>
   </body>
