@@ -45,6 +45,7 @@ header .logo{
 header.abajo .logo{
   color:#103783;
 }
+
 video {
   position: absolute;
   top: 250px;
@@ -68,7 +69,21 @@ b{
   left: 250px;
   background-color: #fff;
   }
-.flex-section {
+.navbar {
+  display: flex-end;
+}
+.options{
+  display: inline-block;
+  color: #72b01d;
+  font-family: 'Schoolbell', cursive;
+  text-align: center;
+}
+nav{
+  display: block;
+  padding: 0 10%;
+
+}
+.flex-section { 
   display: flex;
   align-content: center;
   flex-wrap: wrap;

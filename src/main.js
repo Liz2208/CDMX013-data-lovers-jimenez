@@ -1,7 +1,7 @@
+
 import data from './data/athletes/athletes.js';
 import { filterGender, filterSport, filterteam, filterMedal, SortAZ, SortZA } from "./data.js";
 //import athletes from './data/athletes/athletes.js';
-
 
 window.addEventListener("scroll", function() {
 	var header = this.document.querySelector("header");
@@ -19,8 +19,9 @@ const renderAthlete = (athlete) => {
 		<div class="medal"><p>Medal: ${athlete.medalIcon} <p> </div>
 		<div class="gender"><p>Team: ${athlete.team} <p> </div>
 	`;
-
+	
 }
+
 const section = document.getElementById('sectionAthletes');
 const button = document.getElementById("button1");
 button.addEventListener("click",()=>{
@@ -39,10 +40,12 @@ data.athletes.forEach(element => {
 		element["medalIcon"]  = '🥇';
 	}
 
+
 	const html = renderAthlete(element)
 	
 	section.insertAdjacentHTML('afterbegin', html);
 })
+
 
 	//filtro por genero
 const filterBtnGender = document.querySelector('.filterBtnGender')
@@ -122,3 +125,4 @@ if (event.target.value === "ZA"){
 
 athletesfiltersbyGender.length
 console.log(athletesfiltersbyGender.length)
+
