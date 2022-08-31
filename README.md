@@ -1,6 +1,8 @@
 1. Presentación del proyecto
 
-<img/src="images/1.jpeg"  width:"700">
+![1](https://user-images.githubusercontent.com/108832268/187640753-89e159c4-9fbf-48b8-b715-008d1d49c958.jpeg)
+
+
 La web creada presenta información sobre los Atletas medallistas que participarón en los Juegos Olímpicos de Río de Janeiro 2016. La interfaz permite al usuario visualizar e interactuar con los datos de su interés mediante las funciones de Filtrado (filtrado por género, deporte,País, medalla) asimismo se presentan en   Orden alfabético (AZ y ZA).
 
 2. Historias de usuario
@@ -17,11 +19,16 @@ País
 Historia 2: Problematica: “Como coach deportivo  me encantaria enseñar en mi clase la participacion femenina y masculina en estas olimpiadas ”
 Solucion empleada : Se implemento un filtro en el cual se puede visualizar por genero ya sea solo femenino o solo masculino segun lo requiera el usuario. 
 
+![3](https://user-images.githubusercontent.com/108832268/187641344-3df7d456-fc54-4449-a093-0c0ea7a7a532.jpeg)
+
+
 Historia 3: Problematica: “Como atleta me gustaria visualizar los datos filtrados por deporte, país, medallas con mayor facilidad” 
 Solucion empleada : Se agregaron filtros para seleccionar por todos los deportes, países participantes y medallas , asi el usuario puede elegir que visualizar.
 
 Historia 4: Problematica: “Como atleta me gustaria visualizar los datos de manera alfabetica con mayor facilidad y asi tener un orden” 
 Solucion empleada : Se agrego un filtro en el cual el usuario puede elegir si ordenar desde la AZ o viceversa ZA.
+
+
 
 3. Prototipo
 El primer prototipo que realizamos fue de baja fidelidad, en papel, lapiz y utilizando algunos colores, y quedó de la siguiente manera:
@@ -29,14 +36,22 @@ El primer prototipo que realizamos fue de baja fidelidad, en papel, lapiz y util
 3.1 Prototipo de alta fidelidad
 Para el diseño del prototipo de alta fidelidad pensamos en un diseño con los colores representativos de los Juegos Olímpicos de Río de Janeiro 2016, ordenado , de fácil acceso, tomando en cuenta las historias de usuario. Se usarón imagenes, gift, aplicandoles una mejora en cuanto a sus pixeles, visualización y colores.
 
+![4](https://user-images.githubusercontent.com/108832268/187641548-93b3faef-0a39-426c-b81e-aa74cb224339.jpeg)
+
+
 La primer pantalla que visualiza el usuario es con header con vector de los Juegos Olímpicos de Río de Janeiro 2016, asimismo se presenta un video con lo mas destacado sobre dichos juegos para ir introduciendo al ambiente deportivo al usuario. 
 Asimismo se incluyeron tres botones de forma que puedan ser seleccionados de manera agradable .
 El usuario podra visualizar una primera pantalla los  filtros de: genero, deporte, pais, medallas y orden alfabetico. Cada atleta cuenta con una tarjeta que contiene toda su información deportiva en los juegos olímpicos, además de una imagen avatar de genero y de medalla conseguida.
 
 3.2 Vista final
+
 Basadas en el diseño del prototipo de alta fidelidad se realizaron ajustes tomando en consideración el feedback tant de coach, como de compañeras, para que diera una pagina más amigable al usuario.
 
+![5](https://user-images.githubusercontent.com/108832268/187641461-4f65a3e3-63dc-4442-97fa-c13e77f4131b.jpeg)
+
+
 4. Pruebas unitarias (Test)
+
 
 
 
