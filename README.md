@@ -1,5 +1,6 @@
 1. Presentación del proyecto
 
+<img/src="images/1.jpeg"  width:"700">
 La web creada presenta información sobre los Atletas medallistas que participarón en los Juegos Olímpicos de Río de Janeiro 2016. La interfaz permite al usuario visualizar e interactuar con los datos de su interés mediante las funciones de Filtrado (filtrado por género, deporte,País, medalla) asimismo se presentan en   Orden alfabético (AZ y ZA).
 
 2. Historias de usuario
