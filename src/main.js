@@ -20,13 +20,13 @@ const renderAthlete = (athlete) => {
 	`;
 }
 
-const renderStadistics =(participantes) =>{
-    return `
-	< section id="stadistics" class="circle">
-	<p> el porcentaje de participación fue de: <span>${participantes}</span></p>
-	</section>
-	`;
-}
+//const renderStadistics =(participantes) =>{
+   // return `
+    //< section id="stadistics" class="circle">
+    //<div class="genderstatts"><p> el porcentaje de participación fue de: <span>${participantes.gender}</span></p> </div>
+    //</section>
+	//`;
+//}
 
 const section = document.getElementById('sectionAthletes');
 const button = document.getElementById("button1");
@@ -34,7 +34,15 @@ button.addEventListener("click",()=>{
 	ocultar();
 	section.classList.toggle("displaysection")
 });
+const buton = document.getElementById("button2");
+buton.addEventListener('click', ()=>{ //primero limpiamos pantalla
+	ocultar();
+	section.classList.toggle("displaysection")
+section.innerHTML = ""
 
+section.innerHTML= `tenemos mujeres`;
+
+});
 
 data.athletes.forEach(element => {
 	element["genderIcon"]=element.gender === 'F' ? element.gender='🙋🏻‍♀️': element.gender = '🙋🏻‍♂️'
@@ -47,6 +55,7 @@ data.athletes.forEach(element => {
 	}
 
 	const html = renderAthlete(element)
+
 	
 	section.insertAdjacentHTML('afterbegin', html);
 })
@@ -62,7 +71,7 @@ filterGender(data, genderIcon).forEach(athlete => {
 		const html = renderAthlete(athlete)
 		section.insertAdjacentHTML('afterbegin', html);
 	athletesfiltersbyGender.push(athlete)
-	})	
+	})
 	console.log(athletesfiltersbyGender.length)
 })
 
@@ -80,7 +89,7 @@ filterBtnSport.addEventListener('change', (event) => {
 		section.insertAdjacentHTML('afterbegin', html);	
 	athletesfiltersbySport.push(sport)
 	})
-	console.log(athletesfiltersbySport.length)
+	//console.log(athletesfiltersbySport.length)
 })
 // filtrado countries
 const filterBtnteam = document.querySelector('.filterBtnteam')
@@ -96,7 +105,7 @@ filterBtnteam.addEventListener('change', (event) => {
 		section.insertAdjacentHTML('afterbegin', html);
 		athletesfiltersbyTeam.push(team)
 	})
-	console.log(athletesfiltersbyTeam.length)
+	//console.log(athletesfiltersbyTeam.length)
 })
 
 // filtrado medallas
@@ -131,6 +140,6 @@ if (event.target.value === "ZA"){
 	})
 	}
 });
-//estadisticas
+
 
 
