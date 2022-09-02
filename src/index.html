@@ -2,44 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" >
-    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Lexend+Deca:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <section id="intro">
     <header>
       <img  class="aros" src="./images/aros.gif" alt="">
       <a href="#" class="logo" >Juegos Olímpicos Río 2016</a> 
-      <div id = "search-and-return">
-        <input id="input-text" type="text" placeholder="Nombre o Apellido" />
-        <button id="button-search">Buscar 🔍</button>
-      </div>
-    </section> 
-    </header>        
-    <main>
-        </div>
-      <button class="button" id="button1">      
-        <label for="button1">ATLETAS</label> 
-        <button id="btn-return-two">Volver</button>
-
-       <section id="filtrado" class="flex-section displasection">
-        <select name ="filter" class ="filterBtn filterBtnGender">
+      <button class="button" id="button1">Atletas 🏆</button>   
+      <button class="buton" id="button2">Estadísticas 📊</button>  
+      <button class="return" id="return" onclick="location.reload()">Home 🔙</button>
+    </header> 
+  </section> 
+    <video class="videointro" autoplay="true" muted="true" src="./images/videointro.mp4" id="videointro"> </video>
+    
+          <main>
+    
+      <section id="filtrado" class="flex-section displasection" >
+        <select name ="filter" class ="filterBtn filterBtnGender" id="gen">
           <option disabled selected>Género</option>
-          <option select value = "F">Femenino</option>
-          <option select value = "M">Masculino</option> 
-          
-          <select id ="sort" class ="flex-section filterSort">
-          <select name="filter2" class="filterBtn2 filterBtnSort">
-            <option value="" selected disabled>Ordenar</option>
-            <option value="A-Z">A-Z</option>
-            <option value="Z-A">Z-A</option>
-          </select>
-        </select>
+          <option select value = "F">Femenino 🙋🏻‍♀️</option>
+          <option select value = "M">Masculino 🙋🏻‍♂️</option> 
+      </select>
 
-        <select name ="filter" class ="filterBtn3 filterBtnSport">
+        <select name ="filter" class ="filterBtn3 filterBtnSport" id="deport">
             <option disabled selected>Deportes</option>
             <option value="Rowing">Rowing 🚣‍♂️</option>
             <option value="Taekwondo">Taekwondo🥋</option>
@@ -81,10 +72,11 @@
             <option value="Weightlifting">Weightlifting🏋‍♂</option>
             <option value="Wrestling">Wrestling🤼</option>
             </select>
-           
-<<<<<<< HEAD
-      <select name ="filterteam" class ="filterBtn4 filterBtnteam">        <!-- /* ORDER BY COUNTRIES */-->
-        <option value="countries" disabled selected>Países</option>
+
+        
+      <select name ="filterteam" class ="filterBtn4 filterBtnteam" id="pais">        <!-- /* ORDER BY COUNTRIES */-->
+
+        <option disabled selected>País</option>
         <option value="Algeria">Algeria</option>
         <option value="Argentina">Argentina</option>
         <option value="Armenian">Armenian </option>
@@ -169,52 +161,29 @@
         <option value="Ukraine">Ukraine</option>
         <option value="Uzbekistan">Uzbekistan</option>
         <option value="Venezuela">Venezuela</option>
-        <option value="Vietnam">Vietnam</option>
-=======
->>>>>>> 2e208f69cbd85b06ff6b8daa006dd038ae9d24a3
-          </button>   
-        </select> 
-      </section>
+        <option value="Vietnam">Vietnam</option>  
+  
+      </select> 
+      <select name ="filter" class ="filterBtn5 filterBtnMedal" id="med">
+        <option disabled selected>Medallas</option>
+        <option value="Gold">Oro 🥇</option>
+        <option value="Silver">Plata 🥈</option>
+        <option value="Bronze">Bronce 🥉</option>     
+    </select>
+    <select id="sort" class="filter" >
+      <option class= "option" selected disabled value="">Ordenado</option>
+      <option class= "option" value="AZ">A*--Z*</option>
+      <option class= "option" value="ZA">Z*--A*</option>
+    </select>
+    </section>
+
     </main>
       <section class="container" id="extra">
       <section id="sectionAthletes" class="flex-section displaysection">    
       </section> 
-    </section>
-
-   <!--Esta sección es de la tabla de cada deporte-->
-   <section id="medalTable">
-    <div>
-      <h1 id ="titleMedals">Medallero</h1>
-    </div>
-    <div id = "search-and-return">
-      <input id="input-text" type="text" placeholder="Nombre o Apellido" />
-      <button id="button-search">Buscar 🔍</button>
-      <button id="btn-return-two">Volver</button>
-    </div>
-    <div id="filters">
-      <select name ="filter" class ="filterBtn">
-        <option disabled selected>Ordenar por</option>
-        <option select id ="optionAsc" value = "ASC">Nombre A-Z </option>
-        <option select id ="optionDesc" value = "DESC">Nombre Z-A </option> 
-      </select> 
-      <select name ="filter" class ="filterBtn">
-        <option disabled selected>Género</option>
-        <option select value = "F">Femenino</option>
-        <option select value = "M">Masculino</option> 
-      </select>
-      <select name ="filter" class ="filterBtn">
-        <option disabled selected value ="">Medalla</option>
-        <option select value = "Golden">Oro</option>
-        <option select value = "Silver">Plata</option> 
-        <option select value = "Bronze">Bronce</option> 
-      </select>
-    </div>
-    <div>
-      <table id="playersTable">
-      </table>
-    </div>
-  </section>
-
+    </section>   
+      
 
       <script src="main.js" type="module"></script>
   </body>
+  </html>
