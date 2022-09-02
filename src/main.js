@@ -27,22 +27,38 @@ const renderAthlete = (athlete) => {
     //</section>
 	//`;
 //}
-
 const section = document.getElementById('sectionAthletes');
 const button = document.getElementById("button1");
 button.addEventListener("click",()=>{
 	ocultar();
 	section.classList.toggle("displaysection")
 });
+
 const buton = document.getElementById("button2");
 buton.addEventListener('click', ()=>{ //primero limpiamos pantalla
 	ocultar();
-	section.classList.toggle("displaysection")
-section.innerHTML = ""
 
-section.innerHTML= `tenemos mujeres`;
+const sectionAthletes = document.getElementById('sectionAthletes')
+const personas= data.athletes.length
+const filtrarporGenero =(usergender)=>{
+const contargenero = data.athletes.filter(athlete=>{
+	return athlete.gender === usergender
+})
+console.log(filtrarporGenero("F"))
+return contargenero
+}
+console.log(filtrarporGenero('F').length)
+let acumuladorHTML = ''
 
-});
+/*contargenero.forEach(genero => {
+	acumuladorHTML+= `tenemos ${genero.gender} atletas`
+	console.log(contargenero)
+})
+console.log(acumuladorHTML)
+sectionAthletes.innerHTML=acumuladorHTML*/
+})
+
+
 
 data.athletes.forEach(element => {
 	element["genderIcon"]=element.gender === 'F' ? element.gender='🙋🏻‍♀️': element.gender = '🙋🏻‍♂️'
@@ -140,6 +156,3 @@ if (event.target.value === "ZA"){
 	})
 	}
 });
-
-
-

@@ -1,5 +1,3 @@
-import athletes from "./data/athletes/athletes";
-
 export const filterGender=(data, genderIcon) => data.athletes.filter(athlete=>genderIcon===athlete.gender)
 
 export const filterSport=(data, sportID) => data.athletes.filter(athlete=>sportID===athlete.sport);
@@ -30,8 +28,3 @@ export const SortZA= (athletes)=>{
         }  
     }) 
 }
-export const estadisticagenero = (athletes)=>{
-    
-}
-
-]
