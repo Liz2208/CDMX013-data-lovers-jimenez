@@ -99,7 +99,7 @@ p {
 #button1{
   position: absolute;
   top: 80px;
-  right: 200px;
+  right: 300px;
   background-color:white;
   width: 90px;
   height: 40px;
@@ -112,7 +112,23 @@ p {
   color:#103783;
   font-weight: bold;
   }
-  
+  #button2{
+    position: absolute;
+    top: 80px;
+    right: 180px;
+    background-color:white;
+    width: 120px;
+    height: 40px;
+    border-color: #0df505;
+    border-radius: 10px;
+    border-width: 5px;
+    font-size: 18px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    color:#103783;
+    font-weight: bold;
+    }
+
 #return{
   position: absolute;
   top: 80px;
