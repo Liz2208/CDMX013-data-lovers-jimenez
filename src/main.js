@@ -85,6 +85,12 @@ filterGender(data, genderIcon).forEach(athlete => {
 	athletesfiltersbyGender.push(athlete)
 	})
 	console.log(athletesfiltersbyGender.length)
+	if (event.target.value=== "F"){
+		alert ('Hubo :  '+athletesfiltersbyGender.length+"  mujeres ganado medallas" );
+	}
+	else{
+		alert ('Hubo :  '+athletesfiltersbyGender.length+"  hombres ganado medallas" );
+	}
 })
 
 // filtrado de deporte
@@ -101,7 +107,10 @@ filterBtnSport.addEventListener('change', (event) => {
 		section.insertAdjacentHTML('afterbegin', html);	
 	athletesfiltersbySport.push(sport)
 	})
-	//console.log(athletesfiltersbySport.length)
+	console.log(athletesfiltersbySport.length)
+	
+alert ('Se ganaron :  '+athletesfiltersbySport.length+"  medallas en este deporte" );
+	
 })
 // filtrado countries
 const filterBtnteam = document.querySelector('.filterBtnteam')
@@ -117,7 +126,8 @@ filterBtnteam.addEventListener('change', (event) => {
 		section.insertAdjacentHTML('afterbegin', html);
 		athletesfiltersbyTeam.push(team)
 	})
-	//console.log(athletesfiltersbyTeam.length)
+	console.log(athletesfiltersbyTeam.length)
+	alert ('Este país obtuvo :  '+athletesfiltersbyTeam.length+"  medallas" );	
 })
 
 // filtrado medallas

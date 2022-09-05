@@ -84,7 +84,6 @@ video {
   position: absolute;
   
 }
-
 p {
   position: relative;
   padding-left: 19px;
@@ -100,7 +99,7 @@ p {
 #button1{
   position: absolute;
   top: 80px;
-  right: 300px;
+  right: 200px;
   background-color:white;
   width: 90px;
   height: 40px;
@@ -113,27 +112,11 @@ p {
   color:#103783;
   font-weight: bold;
   }
-  #button2{
-    position: absolute;
-    top: 80px;
-    right: 165px;
-    background-color:white;
-    width: 120px;
-    height: 40px;
-    border-color: #0df505;
-    border-radius: 10px;
-    border-width: 5px;
-    font-size: 18px;
-    font-family: 'Edu VIC WA NT Beginner', cursive;
-    font-family: 'Ubuntu', sans-serif;
-    color:#103783;
-    font-weight: bold;
-    }
-
+  
 #return{
   position: absolute;
   top: 80px;
-  right: 70px;
+  right: 100px;
   background-color: white;
   width: 80px;
   height: 40px;
