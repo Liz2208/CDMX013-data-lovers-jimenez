@@ -1,6 +1,5 @@
 import data from './data/athletes/athletes.js';
-import { filterGender, filterSport, filterteam, filterMedal, SortAZ, SortZA} from "./data.js";
-
+import { filterGender, filterSport, filterteam, filterMedal, SortAZ, SortZA } from "./data.js";
 
 window.addEventListener("scroll", function() {
 	var header = this.document.querySelector("header");
@@ -18,7 +17,7 @@ const renderAthlete = (athlete) => {
 		<div class="medal"><p>Medal: ${athlete.medalIcon} </p> </div>
 		<div class="gender"><p>Team: ${athlete.team} </p> </div>
 		</section>
-	`
+	`;
 }
 
 const section = document.getElementById('sectionAthletes');
@@ -28,22 +27,6 @@ button.addEventListener("click",()=>{
 	section.classList.toggle("displaysection")
 });
 
-const buton = document.getElementById("button2");
-buton.addEventListener('click', ()=>{ //primero limpiamos pantalla
-	ocultar();
-	
-const sectionAthletes = document.getElementById('sectionAthletes')
-const contargenero = data.athletes
-let acumuladorHTML = ''
-
-contargenero.forEach(genero => {
-	acumuladorHTML+= `tenemos ${genero.gender}`
-	console.log(contargenero)
-})
-console.log(acumuladorHTML)
-sectionAthletes.innerHTML=acumuladorHTML
-
-});
 
 data.athletes.forEach(element => {
 	element["genderIcon"]=element.gender === 'F' ? element.gender='🙋🏻‍♀️': element.gender = '🙋🏻‍♂️'
@@ -74,6 +57,12 @@ filterGender(data, genderIcon).forEach(athlete => {
 	athletesfiltersbyGender.push(athlete)
 	})
 	console.log(athletesfiltersbyGender.length)
+	if (event.target.value=== "F"){
+		alert ('Hubo :  '+athletesfiltersbyGender.length+"  mujeres ganado medallas" );
+	}
+	else{
+		alert ('Hubo :  '+athletesfiltersbyGender.length+"  hombres ganado medallas" );
+	}
 })
 
 // filtrado de deporte
@@ -90,7 +79,10 @@ filterBtnSport.addEventListener('change', (event) => {
 		section.insertAdjacentHTML('afterbegin', html);	
 	athletesfiltersbySport.push(sport)
 	})
-	//console.log(athletesfiltersbySport.length)
+	console.log(athletesfiltersbySport.length)
+	
+alert ('Se ganaron :  '+athletesfiltersbySport.length+"  medallas en este deporte" );
+	
 })
 // filtrado countries
 const filterBtnteam = document.querySelector('.filterBtnteam')
@@ -106,7 +98,8 @@ filterBtnteam.addEventListener('change', (event) => {
 		section.insertAdjacentHTML('afterbegin', html);
 		athletesfiltersbyTeam.push(team)
 	})
-	//console.log(athletesfiltersbyTeam.length)
+	console.log(athletesfiltersbyTeam.length)
+	alert ('Este país obtuvo :  '+athletesfiltersbyTeam.length+"  medallas" );	
 })
 
 // filtrado medallas

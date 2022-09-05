@@ -26,5 +26,5 @@ export const SortZA= (athletes)=>{
         else {
             return -1;
         }  
-    }) 
+    })
 }
