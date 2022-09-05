@@ -50,7 +50,7 @@ Basadas en el diseño del prototipo de alta fidelidad se realizaron ajustes toma
 ![5](https://user-images.githubusercontent.com/108832268/187641461-4f65a3e3-63dc-4442-97fa-c13e77f4131b.jpeg)
 
 
-4. Pruebas unitarias (Test)
+
 
 
 
