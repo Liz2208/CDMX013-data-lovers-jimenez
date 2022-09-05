@@ -19,47 +19,43 @@ const renderAthlete = (athlete) => {
 		</section>
 	`;
 }
+const renderStadistcs =(femaleathletes,maleathletes) =>{
+	return `
+	<section id="athletes" class="card">
+		<div class="card-image"></div>
+		<div class="card-opacidad"></div>
+		<p>El total de mujeres que participaron fue de : ${femaleathletes} </p> 
+		<p>El total de hombres que participaron fue de : ${maleathletes} </p> 
+		</section>
+	`;
+}
 
-//const renderStadistics =(participantes) =>{
-   // return `
-    //< section id="stadistics" class="circle">
-    //<div class="genderstatts"><p> el porcentaje de participación fue de: <span>${participantes.gender}</span></p> </div>
-    //</section>
-	//`;
-//}
 const section = document.getElementById('sectionAthletes');
-const button = document.getElementById("button1");
-button.addEventListener("click",()=>{
+const sectionStadistics = document.getElementById('sectionStadistics');
+const athletesbutton = document.getElementById("button1");
+athletesbutton.addEventListener("click",()=>{
 	ocultar();
 	section.classList.toggle("displaysection")
 });
 
-const buton = document.getElementById("button2");
-buton.addEventListener('click', ()=>{ //primero limpiamos pantalla
+const stadisticsbutton = document.getElementById("button2");
+stadisticsbutton.addEventListener('click', ()=>{ //primero limpiamos pantalla
 	ocultar();
+	sectionStadistics.classList.toggle("displaysection")
 
-const sectionAthletes = document.getElementById('sectionAthletes')
 const personas= data.athletes.length
-const filtrarporGenero =(usergender)=>{
+const filtrarporGenero =(gender)=>{
 const contargenero = data.athletes.filter(athlete=>{
-	return athlete.gender === usergender
+	return athlete.gender === gender
 })
-console.log(filtrarporGenero("F"))
 return contargenero
 }
-console.log(filtrarporGenero('F').length)
-let acumuladorHTML = ''
-
-/*contargenero.forEach(genero => {
-	acumuladorHTML+= `tenemos ${genero.gender} atletas`
-	console.log(contargenero)
+console.log(personas)
+console.log(filtrarporGenero('🙋🏻‍♂️').length)
+console.log(filtrarporGenero('🙋🏻‍♀️').length)
+const html = renderStadistcs(filtrarporGenero('🙋🏻‍♀️').length,filtrarporGenero('🙋🏻‍♂️').length)
+sectionStadistics.insertAdjacentHTML('afterbegin', html);	
 })
-console.log(acumuladorHTML)
-sectionAthletes.innerHTML=acumuladorHTML*/
-})
-
-
-
 data.athletes.forEach(element => {
 	element["genderIcon"]=element.gender === 'F' ? element.gender='🙋🏻‍♀️': element.gender = '🙋🏻‍♂️'
 	if(element.medal==='Bronze'){
